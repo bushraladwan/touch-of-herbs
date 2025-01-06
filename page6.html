@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Questions</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    #cont {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        border: 0px solid black;
+        padding: 1px;
+        background-color: #dbffcd;
+    }
+
+    .dd {
+        color: white;
+        font-family: "Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif";
+        text-align: center;
+        border: 0px solid rgb(5, 79, 2);
+        background-color: #4b9171;
+        width: 90px;
+        height: 25px;
+        border-radius: 4px;
+        margin-top: 20px;
+
+    }
+
+    #logo {
+        border: 0px solid black;
+        width: 120px;
+        height: 100px;
+        background-image: url(imgs/logo.png);
+        background-size: 120%;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 2px;
+        margin-right: 3px;
+        display: inline-block;
+
+    }
+
+    #main {
+        margin-left: 20px;
+        justify-content: space-between;
+        display: flex;
+        border: 0px solid black;
+        width: 80%;
+        height: 20%;
+        align-self: flex-start;
+
+    }
+
+    a {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-decoration: none;
+        color: white;
+
+    }
+
+    a:active {
+        color: black
+    }
+    a:hover{
+        color:#103416
+    }
+
+
+    #FAQ {
+        border: 1px solid black;
+        width: 80%;
+        height: 7.5cm;
+        margin-left: 100px;
+        background-image: url(imgs/fAQ.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    #tit {
+        border: 1px solid black;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 88px;
+        background-color: rgba(0, 0, 0, 0.425);
+        text-align: center;
+        display: block;
+        margin-top: 0px;
+
+    }
+
+    #main2 {
+        border: 0px solid black;
+        width: 29cm;
+        height: 20cm;
+        align-items: center;
+        margin: 15px;
+        margin-right: 50px;
+        margin-left: 50px;
+        background-color: rgb(202, 246, 202);
+
+    }
+
+    #right {
+        border: 5px solid rgba(4, 57, 4, 0.715);
+        border-radius: 10px;
+        width: 10cm;
+        height: 11.4cm;
+        margin-top: 1cm;
+        margin-left: auto;
+        margin-right: 3cm;
+        background-color: rgba(4, 57, 4, 0.308);
+    }
+
+    #left {
+        border: 5px solid rgba(4, 57, 4, 0.715);
+        border-radius: 10px;
+        width: 10cm;
+        height: 11.4cm;
+        margin-top: 1cm;
+        margin-left: 70px;
+        margin-right: auto;
+        justify-content: center;
+        background-color: rgba(4, 57, 4, 0.308);
+
+
+    }
+
+    #line {
+        border: 0px solid black;
+        width: 90%;
+        height: 480px;
+        margin-left: 50px;
+        margin-right: 20px;
+        margin-top: 20px;
+        justify-content: center;
+        display: flex;
+
+    }
+
+    #cen {
+        border: 5px solid rgba(4, 57, 4, 0.715);
+        border-radius: 10px;
+        width: 90%;
+        height: 28%;
+        margin-left: 50px;
+        margin-right: 20px;
+        margin-top: 20px;
+        justify-content: center;
+        display: flex;
+        background-color: rgba(4, 57, 4, 0.308);
+
+
+    }
+
+    #icon {
+        border: 0px solid black;
+        background-image: url(imgs/symbol_no_bg_manual.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 2cm;
+        height: 2.2cm;
+        margin-top: 5.7cm;
+        margin-right: 7.7cm;
+
+
+    }
+
+    #leef {
+        border: 0px solid black;
+        background-image: url(imgs/Leaf_no_bg.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        width: 2cm;
+        height: 2.2cm;
+        margin-top: 5.7cm;
+        margin-right: 7.7cm;
+    }
+
+    #plant {
+        border: 0px solid black;
+        background-image: url(imgs/sym2.no-bg.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 80%;
+        width: 2cm;
+        height: 5cm;
+        margin-right:auto;
+        justify-content: center;
+    }
+
+    .ques {
+        border: 0px solid black;
+        width: 9cm;
+        height: 1cm;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: large;
+        padding:4px;
+        direction: rtl;
+        margin-left: auto;
+        font-weight: bolder;
+        text-indent: 4px;
+    }
+
+    .ques-main {
+        border: 0px solid black;
+        width: 9cm;
+        height: 2cm;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 40px;
+        direction: rtl;
+        margin-left: auto;
+        padding-top: 2px;
+        padding-bottom: 0.3px;
+        text-indent: 6px;
+
+    }
+
+    .que2 {
+        border: 0px solid black;
+        width: 7cm;
+        height: 1cm;
+        direction: rtl;
+        text-align: center;
+        font-weight: bold;
+        text-indent: 10px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-left: 20cm;
+        margin-right:1cm;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        display: block
+    }
+
+    .ques-main2 {
+        border: 0px solid black;
+        width: 15cm;
+        height: 0.9cm;
+        direction: rtl;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-indent: 20px;
+        font-weight: normal;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin-top: 2px;
+        margin-left: 10cm;
+        margin-right:auto;
+        padding-top: 0.3px;
+        padding-bottom: 0.3px;
+        display: block
+    }
+
+    #que3 {
+        border: 0px solid black;
+        height: 1cm;
+
+    }
+
+    #footer {
+        border: 0px solid black;
+        width: 100%;
+        height: 3cm;
+        background-color: #103416;
+    }
+    #btn{
+        border:0px solid black;
+        border-radius:10px;
+        direction: ltr;
+        text-align:center;
+        padding:0.1cm;
+        width:1.8cm;
+        height:0.5cm;
+        margin: top 30px;
+        margin-left: 20px;
+        margin-bottom:20px;
+        background-color: #063b23e8;
+        
+    }
+</style>
+
+<body bgcolor="white">
+    <div id="cont">
+        <div id="logo"></div>
+        <div id="main">
+            <div class="dd">
+                <a href="**">About us</a>
+            </div>
+            <div class="dd">
+                <a href="**" target="blank">herbs</a>
+            </div>
+            <div class="dd">
+                <a href="**" target="blank">In medicine</a>
+            </div>
+            <div class="dd">
+                <a href="page5.html" target="blank">In food </a>
+            </div>
+            <div class="dd">
+                <a href="page6.html" target="blank">Questions</a>
+            </div>
+            <div class="dd">
+                <a href="**" target="blank">?</a>
+            </div>
+            <div class="dd">
+                <a href="page8.html" target="blank">Why Us ? </a>
+            </div>
+            <div class="dd">
+                <a href="**" target="blank">Login</a>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div id="FAQ">
+        <div id="tit">
+            <p>FAQ</p>
+        </div>
+    </div>
+    <br>
+    <div id="main2">
+        <div id="line">
+            <div id="right">
+                <div class="ques">
+                    <p>هل يتطلب استخدام الموقع تسجيل الدخول؟</p>
+                </div>
+                <div class="ques-main">
+                    <p>لا، يمكن للجميع الوصول إلى محتوى الموقع دون الحاجة إلى تسجيل الدخول. ولكن بعض الميزات،
+                        مثل حفظ الوصفات أو إرسالها، قد تتطلب إنشاء حساب.</p>
+                    <div id="icon"></div>
+                </div>
+                <div class="ques">
+                    <p>. كيف يمكنني البحث عن معلومات معينة في الموقع؟</p>
+                </div>
+                <div class="ques-main">
+
+                    <p>يمكنك استخدام شريط البحث الموجود أعلى الصفحة للبحث عن أي معلومات أو مواضيع معينة تهمك.</p>
+                </div>
+                <div class="ques">
+                    <p>هل يمكنني التواصل مع فريق الدعم إذا واجهت مشكلة؟</p>
+                </div>
+                <div class="ques-main">
+                    <p>بالطبع، يمكنك التواصل معنا من خلال قسم "اتصل بنا" وسنكون سعداء بمساعدتك.</p>
+                </div>
+
+            </div>
+            <div id="left">
+                <div class="ques">
+                    <p>ما هو الهدف من هذا الموقع؟</p>
+                </div>
+                <div class="ques-main">
+                    <p> الموقع يهدف إلى تقديم معلومات مفيدة وشاملة حول الأعشاب في الطعام والطب....الخ
+                        ، بالإضافة إلى تقديم نصائح ووصفات لتحسين تجربتك في الطهي</p>
+                    <div id="leef"></div>
+                </div>
+                <div class="ques">
+                    <p>.هل يمكنني مشاركة وصفات أو معلومات من خلال الموقع?</p>
+                </div>
+                <div class="ques-main">
+                    <p>نعم، نحن نشجع المستخدمين على مشاركة وصفاتهم وتجاربهم. يمكنك إرسال الوصفات من خلال قسم "تواصل
+                        معنا".</p>
+                </div>
+                <div class="ques">
+                    <p>هل المعلومات الموجودة في الموقع دقيقة؟</p>
+                </div>
+                <div class="ques-main">
+                    <p>نعم، نحن نحرص على تقديم معلومات دقيقة ومحدثة بناءً على مصادر موثوقة وخبراء في المجال.</p>
+                </div>
+
+            </div>
+        </div>
+        <div id="cen">
+            <div class="que2">
+
+                <p>هل يمكنني طباعة المحتوى من الموقع؟</p>
+                <div class="ques-main2">
+                    <p>نعم، يمكنك طباعة الوصفات أو المقالات من الموقع بسهولة باستخدام خاصية الطباعة في المتصفح.</p>
+                </div>
+
+                <div id="que3">
+                    <p> هل يمكنني طلب إضافة موضوع جديد للموقع؟</p>
+                </div>
+                <div class="ques-main2">
+                    <p>بالتأكيد، نحن نرحب بجميع اقتراحاتكم. يمكنك إرسال اقتراحك من خلال قسم "اقتراحات المستخدمين".</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    </div> 
+    <div id="btn">
+        <a href="page7" target="_blank">Next</a>
+    </div>
+    <div id="footer"></div>
+    
+</body>
+
+</html>
